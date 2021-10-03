@@ -153,7 +153,7 @@ if AWS_ACCESS_KEY_ID:
     COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
     AWS_S3_CUSTOM_DOMAIN = None
-    AWS_DEFAULT_ACL = 'private'
+    AWS_DEFAULT_ACL = 'public-read'
 
     # Static Assets
     # --------------------------------------------------------------------
