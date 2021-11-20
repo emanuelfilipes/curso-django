@@ -56,6 +56,7 @@ def test_aulas_urls(resp, aulas: List[Aula]):
         assert_contains(resp, aula.get_absolute_url())
 
 
-# def test_aulas_links(resp, aulas): # não tinha na aula de Acesso ao lado N do Relacionamento(nome diferente(test_aula_url))
+# def test_aulas_links(resp, aulas): # não tinha na aula de Acesso ao lado N
+# do Relacionamento(nome diferente(test_aula_url))
 #     for aula in aulas:
 #         assert_contains(resp, aula.get_absolute_url())
