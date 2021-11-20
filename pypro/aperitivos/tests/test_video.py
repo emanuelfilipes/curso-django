@@ -6,7 +6,6 @@ from pypro.django_assertions import assert_contains
 from model_mommy import mommy
 
 
-
 @pytest.fixture
 def video(db):
     return mommy.make(Video)
@@ -35,4 +34,5 @@ def test_titulo_video(resp, video):
 
 
 def test_conteudo_video(resp, video):
-    assert_contains(resp, f'<iframe src="https://player.vimeo.com/video/{video.vimeo_id}?h=a7afa8f2f9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"')
+    assert_contains(resp, f'<iframe src="https://player.vimeo.com/video/{video.vimeo_id}'
+                          f'?h=a7afa8f2f9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"')
